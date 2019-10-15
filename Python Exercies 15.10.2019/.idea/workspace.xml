@@ -13,16 +13,25 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Exeption inheritance.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="638">
+            <state relative-caret-position="506">
               <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Overriding Methods.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-41" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Super() proxy object.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="528">
+              <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+            </state>
           </provider>
         </entry>
       </file>
@@ -41,6 +50,7 @@
         <option value="$PROJECT_DIR$/Exeption ingeritance.py" />
         <option value="$PROJECT_DIR$/Exeption inheritance.py" />
         <option value="$PROJECT_DIR$/Overriding Methods.py" />
+        <option value="$PROJECT_DIR$/Super() proxy object.py" />
       </list>
     </option>
   </component>
@@ -83,7 +93,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Overriding Methods">
+  <component name="RunManager" selected="Python.Super() proxy object">
     <configuration name="Exeption inheritance" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Python Exercies 15.10.2019" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -126,8 +136,30 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Super() proxy object" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Python Exercies 15.10.2019" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Super() proxy object.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Super() proxy object" />
         <item itemvalue="Python.Overriding Methods" />
         <item itemvalue="Python.Exeption inheritance" />
       </list>
@@ -159,16 +191,23 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Overriding Methods.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-41" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Exeption inheritance.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
+        <state relative-caret-position="506">
           <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Overriding Methods.py">
+    <entry file="file://$PROJECT_DIR$/Super() proxy object.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-41" />
+        <state relative-caret-position="528">
+          <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+        </state>
       </provider>
     </entry>
   </component>
