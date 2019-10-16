@@ -9,6 +9,18 @@ class Menu:
     def __repr__(self):
         return "{} menu is avalible from {} to {}".format(self.name, self.start_time, self.end_time)
 
+
+    def calculate_bill(self, purchased_items):
+
+        bill = 0
+
+        for purchased_item in purchased_items:
+            if purchased_item in self.items.keys():
+                bill += self.items[purchased_item]`1
+
+        return bill
+
+
 brunch = Menu("brunch", {
   'pancakes': 7.50, 'waffles': 9.00, 'burger': 11.00, 'home fries': 4.50, 'coffee': 1.50, 'espresso': 3.00, 'tea': 1.00, 'mimosa': 10.50, 'orange juice': 3.50
 }, 11, 16)
@@ -28,3 +40,4 @@ kids = Menu("kids", {
 """this will print string representation method"""
 # print(early_bird)
 
+print(brunch.calculate_bill(['pancakes', 'home fries', 'coffee']))
