@@ -9,16 +9,24 @@ class Menu:
     def __repr__(self):
         return "{} menu is avalible from {} to {}".format(self.name, self.start_time, self.end_time)
 
-
     def calculate_bill(self, purchased_items):
 
         bill = 0
 
         for purchased_item in purchased_items:
             if purchased_item in self.items.keys():
-                bill += self.items[purchased_item]`1
+                bill += self.items[purchased_item]
 
         return bill
+
+
+class Franchise:
+    def __init__(self, adress, menus):
+        self.adress = adress
+        self.menus = menus
+
+    def __repr__(self):
+        return "Adress of the franchise restaurant: {}".format(self.adress)
 
 
 brunch = Menu("brunch", {
@@ -40,4 +48,12 @@ kids = Menu("kids", {
 """this will print string representation method"""
 # print(early_bird)
 
-print(brunch.calculate_bill(['pancakes', 'home fries', 'coffee']))
+"""tests the calculate_bill method"""
+# print(brunch.calculate_bill(['pancakes', 'home fries', 'coffee']))
+
+
+""" Creating the restaurant franchises"""
+
+flagship_store = Franchise("1232 West End Road", [brunch, early_bird, dinner, kids])
+new_installment = Franchise("12 East Mulberry Street", [brunch, early_bird, dinner, kids])
+
