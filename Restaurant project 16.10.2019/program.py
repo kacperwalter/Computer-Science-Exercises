@@ -28,29 +28,24 @@ class Franchise:
     def __repr__(self):
         return "Adress of the franchise restaurant: {}".format(self.adress)
 
+brunch_dishes = {'pancakes': 7.50, 'waffles': 9.00, 'burger': 11.00, 'home fries': 4.50, 'coffee': 1.50, 'espresso': 3.00, 'tea': 1.00, 'mimosa': 10.50, 'orange juice': 3.50}
+early_bird_dishes = {'salumeria plate': 8.00, 'salad and breadsticks (serves 2, no refills)': 14.00, 'pizza with quattro formaggi': 9.00, 'duck ragu': 17.50, 'mushroom ravioli (vegan)': 13.50, 'coffee': 1.50, 'espresso': 3.00,}
+dinner_dishes = {'crostini with eggplant caponata': 13.00, 'ceaser salad': 16.00, 'pizza with quattro formaggi': 11.00, 'duck ragu': 19.50, 'mushroom ravioli (vegan)': 13.50, 'coffee': 2.00, 'espresso': 3.00,}
+kids_dishes = {'chicken nuggets': 6.50, 'fusilli with wild mushrooms': 12.00, 'apple juice': 3.00}
 
-brunch = Menu("brunch", {
-  'pancakes': 7.50, 'waffles': 9.00, 'burger': 11.00, 'home fries': 4.50, 'coffee': 1.50, 'espresso': 3.00, 'tea': 1.00, 'mimosa': 10.50, 'orange juice': 3.50
-}, 11, 16)
+brunch = Menu("brunch", brunch_dishes, 11, 16)
 
-early_bird = Menu("early bird", {
-  'salumeria plate': 8.00, 'salad and breadsticks (serves 2, no refills)': 14.00, 'pizza with quattro formaggi': 9.00, 'duck ragu': 17.50, 'mushroom ravioli (vegan)': 13.50, 'coffee': 1.50, 'espresso': 3.00,
-}, 15, 18)
+early_bird = Menu("early bird", early_bird_dishes, 15, 18)
 
-dinner = Menu("dinner", {
-  'crostini with eggplant caponata': 13.00, 'ceaser salad': 16.00, 'pizza with quattro formaggi': 11.00, 'duck ragu': 19.50, 'mushroom ravioli (vegan)': 13.50, 'coffee': 2.00, 'espresso': 3.00,
-}, 17, 23)
+dinner = Menu("dinner", dinner_dishes, 17, 23)
 
-kids = Menu("kids", {
-  'chicken nuggets': 6.50, 'fusilli with wild mushrooms': 12.00, 'apple juice': 3.00
-}, 11, 21)
+kids = Menu("kids", kids_dishes, 11, 21)
 
 """this will print string representation method"""
 # print(early_bird)
 
 """tests the calculate_bill method"""
 # print(brunch.calculate_bill(['pancakes', 'home fries', 'coffee']))
-
 
 """ Creating the restaurant franchises"""
 
