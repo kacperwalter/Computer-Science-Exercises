@@ -26,21 +26,16 @@ class Franchise:
     def __repr__(self):
         return "Adress of the franchise restaurant: {}".format(self.adress)
 
-brunch_dishes = {'pancakes': 7.50, 'waffles': 9.00, 'burger': 11.00, 'home fries': 4.50, 'coffee': 1.50, 'espresso': 3.00, 'tea': 1.00, 'mimosa': 10.50, 'orange juice': 3.50}
-early_bird_dishes = {'salumeria plate': 8.00, 'salad and breadsticks (serves 2, no refills)': 14.00, 'pizza with quattro formaggi': 9.00, 'duck ragu': 17.50, 'mushroom ravioli (vegan)': 13.50, 'coffee': 1.50, 'espresso': 3.00,}
-dinner_dishes = {'crostini with eggplant caponata': 13.00, 'ceaser salad': 16.00, 'pizza with quattro formaggi': 11.00, 'duck ragu': 19.50, 'mushroom ravioli (vegan)': 13.50, 'coffee': 2.00, 'espresso': 3.00,}
-kids_dishes = {'chicken nuggets': 6.50, 'fusilli with wild mushrooms': 12.00, 'apple juice': 3.00}
+    def available_menus(self, time):
+        available_menu = []
 
-<<<<<<< HEAD
-brunch = Menu("brunch", brunch_dishes, 11, 16)
+        for menu in self.menus:
+            if time >= menu.start_time and time <= menu.end_time:
+                available_menu.append(menu)
 
-early_bird = Menu("early bird", early_bird_dishes, 15, 18)
+        return available_menu
 
-dinner = Menu("dinner", dinner_dishes, 17, 23)
-
-kids = Menu("kids", kids_dishes, 11, 21)
-=======
-brunch_menu = {'pancakes': 7.50, 'waffles': 9.00, 'burger': 11.00, 'home fries': 4.50, 'coffee': 1.50, 'espresso': 3.00, 'tea': 1.00, 'mimosa': 10.50, 'orange juice': 3.50}
+brunch_menu = {'pancakes': 7.50, 'waffles': 9.00, 'burger': 11.00, 'home fries': 4.50, 'coffee': 1.50, 'espresso': 3.00, 'tea': 1.00, 'mimosa': 10.50, 'orange juice': 3.50,}
 early_bird_menu = {'salumeria plate': 8.00, 'salad and breadsticks (serves 2, no refills)': 14.00, 'pizza with quattro formaggi': 9.00, 'duck ragu': 17.50, 'mushroom ravioli (vegan)': 13.50, 'coffee': 1.50, 'espresso': 3.00,}
 dinner_menu = {'crostini with eggplant caponata': 13.00, 'ceaser salad': 16.00, 'pizza with quattro formaggi': 11.00, 'duck ragu': 19.50, 'mushroom ravioli (vegan)': 13.50, 'coffee': 2.00, 'espresso': 3.00,}
 kids_menu = {'chicken nuggets': 6.50, 'fusilli with wild mushrooms': 12.00, 'apple juice': 3.00}
@@ -49,15 +44,17 @@ brunch = Menu("brunch", brunch_menu, 11, 16)
 early_bird = Menu("early bird", early_bird_menu, 15, 18)
 dinner = Menu("dinner", dinner_menu, 17, 23)
 kids = Menu("kids", kids_menu, 11, 21)
->>>>>>> cleaned code
 
+# print(brunch.items)
 """this will print string representation method"""
 # print(early_bird)
 
 """tests the calculate_bill method"""
 # print(brunch.calculate_bill(['pancakes', 'home fries', 'coffee']))
 
+
 """ Creating the restaurant franchises"""
 flagship_store = Franchise("1232 West End Road", [brunch, early_bird, dinner, kids])
 new_installment = Franchise("12 East Mulberry Street", [brunch, early_bird, dinner, kids])
 
+print(flagship_store.available_menus(23))
