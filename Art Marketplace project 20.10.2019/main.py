@@ -1,14 +1,15 @@
 """Veneer"""
 
 class Art:
-    def __init__(self, artist, title, medium, year):
+    def __init__(self, artist, title, medium, year, owner):
         self.artist = artist
         self.title = title
         self.medium = medium
         self.year = year
+        self.owner = owner
 
     def __repr__(self):
-        return "{a}. {b}. {c}, {d}.".format(a=self.artist, b=self.title, c=self.year, d=self.medium)
+        return "{a}. {b}. {c}, {d}, {e}, {f}".format(a=self.artist, b=self.title, c=self.year, d=self.medium, e=self.owner.name, f=self.owner.location)
 
 
 class Marketplace:
@@ -33,14 +34,15 @@ class Client:
         self.is_museum = is_museum
 
 
-"""Artpiece instantion"""
-girl_with_mandolin = Art("Picasso, Pablo", '"Girl with a Mandolin (Fanny Tellier)"', "Oil on canvas", 1910)
-
 """Marketplace instantion"""
 vaneer = Marketplace()
 
 """Clients instantion"""
 edytta = Client("Edytta Halpirt", "Private Collection", False)
 moma = Client("The MOMA", "New York", True)
+
+"""Artpiece instantion"""
+girl_with_mandolin = Art("Picasso, Pablo", '"Girl with a Mandolin (Fanny Tellier)"', "Oil on canvas", 1910, edytta)
+print(girl_with_mandolin)
 
 
