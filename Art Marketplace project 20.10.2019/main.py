@@ -26,8 +26,21 @@ class Marketplace:
             print(listing)
 
 
-girl_with_mandolin = Art("Picasso, Pablo", '"Girl with a Mandolin (Fanny Tellier)"', "Oil on canvas", 1910)
-print(girl_with_mandolin)
+class Client:
+    def __init__(self, name, location, is_museum):
+        self.name = name
+        self.location = location
+        self.is_museum = is_museum
 
+
+"""Artpiece instantion"""
+girl_with_mandolin = Art("Picasso, Pablo", '"Girl with a Mandolin (Fanny Tellier)"', "Oil on canvas", 1910)
+
+"""Marketplace instantion"""
 vaneer = Marketplace()
-print(vaneer.show_listings())
+
+"""Clients instantion"""
+edytta = Client("Edytta Halpirt", "Private Collection", False)
+moma = Client("The MOMA", "New York", True)
+
+
