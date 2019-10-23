@@ -33,6 +33,20 @@ class Client:
         self.location = location
         self.is_museum = is_museum
 
+    def sell_artwork(self, artwork, price):
+        if artwork.owner == self:
+            new_listing == Listing(artwork, price, self)
+            vaneer.add_listing(new_listing)
+
+class Listing:
+    def __init__(self, art, price):
+        self.art = art
+        self.price = price
+        self.seller = Client()
+
+    def __repr__(self):
+        return "Name of work: {a}. Price of work: {b}".format(a=self.art, b=self.price)
+
 
 """Marketplace instantion"""
 vaneer = Marketplace()
@@ -44,5 +58,7 @@ moma = Client("The MOMA", "New York", True)
 """Artpiece instantion"""
 girl_with_mandolin = Art("Picasso, Pablo", '"Girl with a Mandolin (Fanny Tellier)"', "Oil on canvas", 1910, edytta)
 print(girl_with_mandolin)
+
+
 
 
