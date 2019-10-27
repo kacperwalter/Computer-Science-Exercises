@@ -83,6 +83,10 @@ You can use str() to convert integers to strings!
 Be sure to add "\\n" between values so that each value prints on a new line.
 """
 
+"""
+
+"""
+
 class LinkedList:
 
     def __init__(self, value=None):
@@ -104,4 +108,17 @@ class LinkedList:
                 string_list += str(current_node.get_value()) + "\n"
                 current_node = current_node.get_next_node()
         return string_list
+
+    def remove_node(self, value_to_remove):
+        current_node = self.get_head_node()
+        if current_node.get_value() == value_to_remove:
+            self.head_node = current_node.get_next_node()
+        else:
+            while current_node:
+                next_node = current_node.get_next_node()
+                if next_node.get_value() == value_to_remove:
+                    current_node.set_next_node(next_node.get_next_node())
+                    current_node = None
+                else:
+                    current_node = next_node
 
