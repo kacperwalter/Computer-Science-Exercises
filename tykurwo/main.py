@@ -23,3 +23,6 @@ num_optimal_moves = (2**num_disks) - 1
 
 print("\nThe fastest you can solve this game is in {0} moves".format(num_optimal_moves))
 
+"""i still dont know how to use list comprehension xD"""
+def get_input():
+    choices = [stack.get_name()[0] for stack in stacks]
