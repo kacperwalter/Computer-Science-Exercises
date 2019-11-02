@@ -26,3 +26,4 @@ print("\nThe fastest you can solve this game is in {0} moves".format(num_optimal
 """i still dont know how to use list comprehension xD"""
 def get_input():
     choices = [stack.get_name()[0] for stack in stacks]
+    pass
