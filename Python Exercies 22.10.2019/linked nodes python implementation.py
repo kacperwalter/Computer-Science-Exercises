@@ -88,7 +88,6 @@ Be sure to add "\\n" between values so that each value prints on a new line.
 """
 
 class LinkedList:
-
     def __init__(self, value=None):
         self.head_node = Node(value)
 
